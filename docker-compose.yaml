@@ -6,9 +6,9 @@ services:
     ports:
       - 3000:3000
     environment:
-      - MYSQL_DATABASE=
-      - MYSQL_ROOT_PASSWORD=
-      - MYSQL_PASSWORD=
+      - MYSQL_DATABASE=controle_atendimento
+      - MYSQL_ROOT_PASSWORD=34418502
+      - MYSQL_PASSWORD=34418502
 
   api-rocket:
     build:
