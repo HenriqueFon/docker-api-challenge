@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql:8
+    ports:
+      - 3000:3000
+    environment:
+      - MYSQL_DATABASE=
+      - MYSQL_ROOT_PASSWORD=
+      - MYSQL_PASSWORD=
+
+  api-rocket:
+    build:
+      context: .
+    ports:
+      - 3001:3000
